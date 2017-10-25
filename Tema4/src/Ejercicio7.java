@@ -12,10 +12,10 @@ public class Ejercicio7 {
 			if(frase.charAt(i)>=65 && frase.charAt(i)<=90){
 				contmay +=1;
 			}
-			if(frase.charAt(i)>=97 && frase.charAt(i)<=122){
+			else if(frase.charAt(i)>=97 && frase.charAt(i)<=122){
 				contmin +=1;
 			}
-			if(frase.charAt(i)>=48 && frase.charAt(i)<=57){
+			else if(frase.charAt(i)>=48 && frase.charAt(i)<=57){
 				contnum+=1;
 			}
 		}

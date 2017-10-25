@@ -2,7 +2,7 @@
 public class main {
 
 	public static void main(String[] args) {
-		Ejercicio8.ejercicio8();
+		Ejercicio10.ejercicio10();
 	
 	}
 

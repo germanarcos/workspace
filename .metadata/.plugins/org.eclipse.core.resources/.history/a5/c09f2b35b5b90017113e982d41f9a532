@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Ejercicio10 {
+
+	public static void ejercicio10(){
+		Scanner scanner = new Scanner(System.in);
+		String frase;
+		boolean fin = true;
+		boolean mayus;
+		do{//filtro mayusculas
+			System.out.println("Introduce una frase");
+			frase = scanner.nextLine();
+			while(frase.length()>60){
+				System.out.println("Introduce una frase con menos de 60 carácteres");
+				frase = scanner.nextLine();
+			}
+			fin = true;
+			mayus = false;
+			for(int i=0; i<frase.length() && fin == true;i++ ){
+				if(frase.charAt(i)>=97 && frase.charAt(i)<=122){
+					fin = false;
+				}
+				if(i==(frase.length()-1)){
+					mayus = true;
+				}
+			}
+		}while (mayus == false);//fin filtro mayus
+	}
+}

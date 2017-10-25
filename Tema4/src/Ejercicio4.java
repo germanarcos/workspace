@@ -14,8 +14,8 @@ public class Ejercicio4 {
 		}
 		do{		
 			System.out.println("Introduce 1 si quieres pasar la frase a mayúsculas,"
-					+ " 2 si quieres pasar la frase a minúsculas."
-					+ "0 para salir.");
+					+ "\n 2 si quieres pasar la frase a minúsculas."
+					+ "\n0 para salir.");
 			decision = scanner.nextInt();
 		}while(decision!=1 && decision!=2 && decision != 0);
 		

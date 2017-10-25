@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Ejercicio9 {
+	public static void ejercicio9(){
+		int persona;
+		int conth1 = 0;
+		int conth2 = 0;
+		int contm1 = 0;
+		int contm2 = 0;
+		int codcorr = 0;
+		Scanner scanner = new Scanner(System.in);
+		do{		
+			System.out.println("Introduce un código");
+			persona = scanner.nextInt();
+		}while(persona != 00000000);
+	}
+
+}

@@ -5,22 +5,24 @@ public class Ejercicio8 {
 		String frase;
 		String frmayus;
 		int num;
-		boolean fin = true;
+		boolean seguir = true;
 		boolean mayus;
-		do{
+		do{//filtro mayusculas
 			System.out.println("Introduce una frase");
 			frase = scanner.nextLine();
-			fin = true;
+			seguir = true;
 			mayus = false;
-			for(int i=0; i<frase.length() && fin == true;i++ ){
-				if(frase.charAt(i)>=97 && frase.charAt(i)<=122){
-					fin = false;
-				}
-				if(i==(frase.length()-1)){
-					mayus = true;
+			for(int i=0; i<frase.length() && seguir == true;i++ ){
+				if(frase.charAt(i)>=65 && frase.charAt(i)<=90){
+					seguir = true;
+					if(i+1==frase.length()){
+						mayus = true;
+					}
+				}else{
+					seguir = false;
 				}
 			}
-		}while (mayus == false);
+		}while (mayus == false);//fin filtro mayus
 		System.out.println("Introduce un número");
 		num = scanner.nextInt();
 		for(int i=0; i<frase.length();i++){
