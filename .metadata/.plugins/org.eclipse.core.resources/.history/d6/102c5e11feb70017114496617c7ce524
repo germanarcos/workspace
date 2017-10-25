@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Ejercicio3 {
+	
+	public static void ejercicio3(){
+		Scanner scanner = new Scanner(System.in);
+		String frase;
+		String palabra;
+		int pos;
+		System.out.println("Introduce una frase");
+		frase = scanner.nextLine();
+		System.out.println("Introduce una palabra");
+		palabra = scanner.next();
+		pos = frase.indexOf(palabra);
+		System.out.println(pos);
+		
+	}
+}

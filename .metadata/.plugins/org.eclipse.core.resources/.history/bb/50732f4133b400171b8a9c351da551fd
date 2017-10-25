@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double unDouble;
+		int unInt = 5;
+		unDouble = 5 + unInt;
+		System.out.println(unDouble);
+		unInt = (int)unDouble;
+		System.out.println(unInt);
+		unInt = (int) (2.5 * unInt/unDouble);
+		final double euler = 2.71828;
+
+	}
+
+}

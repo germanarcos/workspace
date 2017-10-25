@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Ejercicio4 {
+
+	public static void ejercicio4(){
+		Scanner scanner = new Scanner(System.in);
+		String frase;
+		int decision;
+		System.out.println("Introduce una frase: ");
+		frase = scanner.nextLine();
+		do{		
+			System.out.println("Introduce 1 si quieres pasar la frase a mayúsculas,"
+					+ " 2 si quieres pasar la frase a minúsculas."
+					+ "0 para salir.");
+			decision = scanner.nextInt();
+		}while(decision!=1 && decision!=2 && decision != 0);
+		
+		switch(decision){
+		case 1:
+			System.out.println(frase.toUpperCase());
+			break;
+		case 2:
+			System.out.println(frase.toLowerCase());
+			break;
+		case 0:
+			System.out.println("Saliendo");
+			break;
+		}
+		if(decision==1){
+			System.out.println(frase.toUpperCase());
+		}else if (decision == 2){
+			System.out.println(frase.toLowerCase());
+		}
+
+
+	}
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Ejercicio3 {
+	
+	public static void ejercicio3(){
+		Scanner scanner = new Scanner(System.in);
+		String frase;
+		String palabra;
+		int pos;
+		System.out.println("Introduce una frase");
+		frase = scanner.nextLine();
+		System.out.println("Introduce una palabra");
+		palabra = scanner.next();
+		pos = frase.indexOf(palabra);
+		System.out.println(pos);
+		if(pos>=0){
+			System.out.println("La posición de "+palabra+" en la frase es: "+pos);
+		}else{
+			System.out.println("La frase no contiene la palabra"+palabra);
+		}
+	}
+}

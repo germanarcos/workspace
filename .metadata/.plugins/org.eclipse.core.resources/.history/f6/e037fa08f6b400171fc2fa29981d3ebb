@@ -1,0 +1,15 @@
+package prueba;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a, b, c;
+		a = 13; b = 5; c = 3;
+		int res;
+		res = a % b / c;
+		System.out.println(res);
+	}
+
+}

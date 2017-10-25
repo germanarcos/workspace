@@ -1,0 +1,24 @@
+import java.math.*;
+import java.util.Scanner;
+public class Ej13 {
+
+	public static void ej13(){
+		double x1;
+		double x2;
+		double b;
+		double a;
+		double c;
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introduce un número a");
+		a = scanner.nextDouble();
+		System.out.println("Introduce un número b");
+		b = scanner.nextDouble();
+		System.out.println("Introduce un número c");
+		c = scanner.nextDouble();
+		x1 = (-b+Math.sqrt((b*b)-(4*a*c)))/(2*a);
+		x2 = (-b-Math.sqrt((b*b)-(4*a*c)))/(2*a);
+		System.out.println(x1);
+		System.out.println(x2);
+	}
+}

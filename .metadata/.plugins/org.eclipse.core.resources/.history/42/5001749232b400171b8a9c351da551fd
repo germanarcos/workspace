@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double unDouble;
+		int unInt = 5;
+		unDouble = 5d + unInt;
+		System.out.println(unDouble);
+
+	}
+
+}

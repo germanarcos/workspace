@@ -1,0 +1,14 @@
+package prueba;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int alfa = 4, beta = 9, x = 0;
+		double div = 9;
+		int resultado;
+		resultado = (int) div / alfa;
+		System.out.println(resultado);
+	}
+
+}

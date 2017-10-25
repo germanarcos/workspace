@@ -1,0 +1,16 @@
+package prueba;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String frase = "£æ";
+		byte[] bite;
+		bite = frase.getBytes();
+		for (int i=0; i<bite.length; i++){
+			System.out.println(bite[i]);
+		}
+	}
+
+}
