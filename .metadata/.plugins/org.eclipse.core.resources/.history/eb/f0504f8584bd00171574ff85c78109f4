@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Ejercicio11 {
+
+	public static void ejercicio11(){
+		String palabra;
+		Scanner scanner = new Scanner(System.in);
+		do{
+			System.out.println("Introduce una palabra");
+			palabra = scanner.nextLine();
+		}while(palabra.length()<20);
+	}
+}

@@ -11,7 +11,7 @@ public class Ejercicio6 {
 		boolean vow = false;
 		do{
 			System.out.println("Introduce una frase menor de 80 caracteres");
-			frase = scanner.next();
+			frase = scanner.nextLine();
 		}while(frase.length()>MAX_LONGITUD);
 		for(int i = 0; i<frase.length();i++){
 			vow = false;

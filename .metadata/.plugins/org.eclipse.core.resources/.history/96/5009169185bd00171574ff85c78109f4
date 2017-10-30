@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Ejercicio11 {
+
+	public static void ejercicio11(){
+		String palabra;
+		Scanner scanner = new Scanner(System.in);
+		do{
+			System.out.println("Introduce una frase de menos de 20 caracteres");
+			palabra = scanner.nextLine();
+		}while(palabra.length()>20);
+		char[] letras = new char [palabra.length()];
+		letras = palabra.toCharArray();
+		for(int i = 1; i<palabra.length();i++){
+			System.out.print(letras[(palabra.length()*2+i)%palabra.length()]);
+		}
+	}
+}
