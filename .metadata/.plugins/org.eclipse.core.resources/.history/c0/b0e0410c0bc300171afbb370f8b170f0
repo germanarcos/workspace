@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Ej3 {
+	public static void ej3(){
+		Scanner teclado = new Scanner(System.in);
+		String palabra;
+		boolean palindromo;
+		System.out.println("Introduce una palabra");
+		palabra = teclado.next();
+		if(palabra.length()%2==0){
+			
+		}
+		else{
+			System.out.println("ha salido loko");
+		}
+	}
+
+}

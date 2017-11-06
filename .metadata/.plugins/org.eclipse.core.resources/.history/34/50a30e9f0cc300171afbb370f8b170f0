@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Ej5 {
+	public static void ej5(){
+		Scanner scanner = new Scanner(System.in);
+		String palabra;
+		System.out.println("Introduce una palabra");
+		palabra = scanner.next();
+		palabra = palabra.charAt(0) + palabra.substring(1, palabra.length()-1) +
+				palabra.charAt(palabra.length()-1);
+		System.out.println(palabra);
+	}
+
+}
