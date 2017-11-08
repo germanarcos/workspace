@@ -75,6 +75,7 @@ public class Ejercicio10 {
 				cartas[num] = 1;
 				System.out.println("Has sacado " + numero + " de " + palo);
 				System.out.println("Has sacado " + contador+ " cartas");
+				
 			}//if
 			if(decision == 'R' || decision == 'r' || contador == NUM_CARTAS){
 				if(contador ==NUM_CARTAS){
