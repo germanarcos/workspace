@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class pulsacion {
+	static Scanner teclado = new Scanner(System.in);
+	public static void pulsa(){
+		char pulsacion = teclado.next().charAt(0);
+	}
+
+}

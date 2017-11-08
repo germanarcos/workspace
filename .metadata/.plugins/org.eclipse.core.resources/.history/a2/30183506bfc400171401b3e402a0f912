@@ -1,0 +1,4 @@
+
+public class array {
+	double[] notas = new double[5];
+}

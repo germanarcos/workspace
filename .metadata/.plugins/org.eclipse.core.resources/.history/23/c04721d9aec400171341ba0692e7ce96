@@ -1,0 +1,7 @@
+import java.util.LinkedList;
+public class Clicker {
+	public static void clicker(){
+		LinkedList clicks = new LinkedList();
+	}
+
+}
