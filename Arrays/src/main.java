@@ -3,7 +3,7 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			Ejercicio10.ejercicio10();
+			Ejercicio3.ejercicio3();
 	}
 
 }

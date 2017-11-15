@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Ejercicio1 {
+	public static void ejercicio1(){
+		Scanner teclado = new Scanner(System.in);
+		int CONTADORES_LENGTH = 3;
+		int[] contadores = new int[CONTADORES_LENGTH];
+		double media = 0;
+		int max = 10;
+		int min = -10;
+		int NUMEROS_LENGTH=20;
+		int[]numeros = new int[NUMEROS_LENGTH];
+		for(int i=0;i<NUMEROS_LENGTH;i++){
+			numeros[i] = Random.random(10, -10);
+		}
+		for(int i=0;i<NUMEROS_LENGTH;i++){
+			media += numeros[i];
+		}
+		media /= NUMEROS_LENGTH;
+		for(int i = 0; i<NUMEROS_LENGTH;i++){
+			if(numeros[i]>media){
+				System.out.println("El número "+numeros[i]+ " es superior a la media");
+			}
+			else if(numeros[i]<media){
+				System.out.println("El número "+numeros[i]+ " es inferior a la media");
+			}
+			else if(numeros[i]==media){
+				System.out.println("El número "+numeros[i]+ " es igual a la media");
+			}
+		}
+	}
+
+}

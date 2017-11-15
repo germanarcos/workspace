@@ -12,8 +12,8 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="fin"/>
 			<item value="printf"/>
+			<item value="fin"/>
 			<item value="sota de oros"/>
 			<item value="sota"/>
 			<item value="fffffffffffffff"/>

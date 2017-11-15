@@ -97,9 +97,9 @@ public class Ejercicios {
 		}
 		System.out.println("");
 		System.out.println("Matriz traspuesta: ");
-		for(int i = 0;i<y;i++){
-			for(int k = 0;k<x;k++){
-				System.out.printf("%5d",matriz[k][i]);
+		for(int k = 0;k<y;k++){
+			for(int i = 0;i<x;i++){
+				System.out.printf("%5d",matriz[i][k]);
 			}
 			System.out.println("");
 		}
@@ -179,7 +179,7 @@ public class Ejercicios {
 					max = j;
 				}
 			}
-			System.out.printf("La nota media más alta del curso " + (i+1) +" es: "+"%2.2f %n",media[max][i]);
+			System.out.printf("La nota media más alta del curso " + (i+1) +" es: "+"%2.2f y pertenece al centro %1d %n",media[max][i],(max+1));
 		}
 
 
@@ -209,17 +209,19 @@ public class Ejercicios {
 					System.out.println();
 			}
 		}//fin de impresion de ventas por representante
-		
+
 		//Calculo de ventas totales
-		for(int i =0;i<REPR;i++){
-			for(int j=0;j<MES;j++){
-				for(int k=0;k<PROD;k++){
+
+		for(int j=0;j<MES;j++){
+			for(int k=0;k<PROD;k++){
+				total[j][k]=0;
+				for(int i =0;i<REPR;i++){
 					total[j][k] += ventas[i][j][k]; 
 				}
 			}
 		}
 		System.out.println("Ventas totales:\n");
-		
+
 		//Impresion de ventas totales
 		for(int i =0;i<MES;i++){
 			Meses.mostrar(i);

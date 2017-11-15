@@ -1,0 +1,7 @@
+
+public class Random {
+	public static int random(int max, int min){
+		int range = (max+1 - min) + 1;
+		return (int)(Math.random()* range + min);
+	}
+}
