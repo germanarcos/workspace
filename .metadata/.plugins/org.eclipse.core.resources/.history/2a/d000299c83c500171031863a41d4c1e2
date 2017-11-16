@@ -1,6 +1,0 @@
-
-public class Meses {
-	public static void mostrar(int num){
-		
-	}
-}
