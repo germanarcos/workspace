@@ -2,14 +2,15 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-
+		boolean filas=true;
 		int lado;
+		int intentos = 3;
 		int casillas;
 		int numbarcos;
 		int random;
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Introduce el lado del cuadrado que formará el tablero:");
-		
+
 		//Introducir un lado válido
 		do{
 			lado = teclado.nextInt();
@@ -19,7 +20,7 @@ public class main {
 				System.out.println("No introduzcas un número negativo o 0.");
 			}
 		}while(lado>10 || lado<=0);
-		
+
 		casillas = lado*lado;
 		String[] tablero = new String [casillas];
 		//Casilla-imprimible
@@ -32,26 +33,38 @@ public class main {
 			numbarcos = teclado.nextInt();
 			teclado.nextLine();
 		}while(numbarcos>=casillas || numbarcos<=0);
-		
-		int[] barcos = new int[numbarcos];
-		
-		for(int i =0;i<numbarcos;i++){
-			random = (int)(Math.random()*casillas);
-			for(int k=0;k<i;k++){
-				
-			}
-			barcos[i]=random;
-			System.out.println(random);
+
+		int[] barcos = new int[casillas];
+
+		for(int i=0;i<casillas;i++){
+			barcos[i]=0;
 		}
-		
+
+		for(int i=0;i<numbarcos;i++){
+			do{
+				random = (int)(Math.random()*casillas);
+			}while (barcos[random]==1);
+			barcos[random]=1;
+		}
+
+		//CATASTROFE
+		System.out.print("  ");
+		for(int j=0;j<(lado) && filas==true;j++){
+			System.out.print(" "+(char)(65+j)+" ");	
+		}
 		for(int i = 0;i<casillas;i++){
+
 			if(i%lado==0){
 				System.out.println();
 			}
 			System.out.print(tablero[i]);
+
 		}
-		
-		
+
+		do{
+
+		}while(intentos>0);
+
 
 	}//fin método main
 
