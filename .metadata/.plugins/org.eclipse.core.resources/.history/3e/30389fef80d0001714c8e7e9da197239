@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class Ej2 {
+	public static void ej2(){
+		Scanner sc = new Scanner(System.in);
+		int[] numeros = new int[90];
+	}
+}

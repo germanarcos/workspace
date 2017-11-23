@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Ej2 {
+	public static void ej2(){
+		final int RANGO_NUMEROS = 90;
+		int[][] carton = new int[3][5];
+		Scanner sc = new Scanner(System.in);
+		int[] numeros = new int[RANGO_NUMEROS];
+		for(int i = 0;i<RANGO_NUMEROS;i++){
+			numeros[i] = 0;
+		}
+		Random.random(1, 90){
+			
+		}
+	}
+}

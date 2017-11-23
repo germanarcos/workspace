@@ -1,7 +1,0 @@
-
-public class Random {
-	public static int Random(int max, int min){
-		int range = (max - min) + 1;
-		return (int)(Math.random()* range + min);
-	}
-}

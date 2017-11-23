@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;NUMEROS&apos; in &apos;Ej2.ej2()&apos; to &apos;RANGO_NUMEROS&apos;&#x0D;&#x0A;- Original project: &apos;Profundizar&apos;&#x0D;&#x0A;- Original element: &apos;Ej2.ej2().NUMEROS&apos;&#x0D;&#x0A;- Renamed element: &apos;NUMEROS&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;NUMEROS&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Ej2.java[Ej2~ej2@NUMEROS!79!95!83!89!I!0!false" name="RANGO_NUMEROS" references="true" stamp="1511463816031" version="1.0"/>
+</session>
