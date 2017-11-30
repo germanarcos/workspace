@@ -55,13 +55,19 @@ public class Ej2 {
 					}
 				}
 			}
-			encontrado = false;
-			for(int filas=0;filas<MAX_FILAS&&encontrado==false;filas++){
-				for(int col=0;col<MAX_COLUMNAS&&encontrado==false;col++){
+			encontrado = true;
+			for(int filas=0;filas<MAX_FILAS&&encontrado==true;filas++){	
+				for(int col=0;col<MAX_COLUMNAS&&encontrado==true;col++){
 					if(numeros[(carton[filas][col])-1]==1){
-						//Numero acertado
+						if(col==MAX_COLUMNAS-1){
+							System.out.println("LINEA "+filas);
+						}
 					}
-				}
+					else{
+						encontrado = false;
+					}
+					
+				}encontrado = true;
 			}
 			System.out.println("Se han sacado "+salir+" bolas");
 		}

@@ -1,0 +1,11 @@
+public class Ej3 {
+	public static void ej3(){
+		char[] simbolos = new char[]{'$','#','%','<','>','@'};
+		String tirada;
+		tirada="";
+		for(int i = 0;i<3;i++){
+			tirada+=simbolos[(int)(Math.random()*simbolos.length)];
+		}
+		System.out.println(tirada);
+	}
+}
