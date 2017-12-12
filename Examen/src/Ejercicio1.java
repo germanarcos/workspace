@@ -1,0 +1,62 @@
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		/*Generar respuestas de forma aleatoria para 5 alumnos, ninguna respuesta dejada en blanco
+		 * Formatear la salida, calcular la nota comparando con la plantilla
+		 */
+		char[] plantilla = new char[]{'B','D','A','C','B','C','A','C','B','D'};
+
+		final int MAX_ALUMNOS =5;
+		final int NUM_RESPUESTAS = 10;
+
+		int aleatorio;
+		int[] aciertos = new int[MAX_ALUMNOS];
+		int[] errores = new int[MAX_ALUMNOS];
+		char[][] alumno = new char[MAX_ALUMNOS][NUM_RESPUESTAS];
+		//Ponemos a cero el vector que va a contar el número de aciertos por alumno
+		for(int alu=0;alu<MAX_ALUMNOS;alu++){
+			aciertos[alu]=0;
+			errores[alu]=0;
+		}
+		//Generamos aleatoriamente las respuestas de los alumnos
+		for(int alu=0;alu<MAX_ALUMNOS;alu++){
+			for(int resp=0;resp<NUM_RESPUESTAS;resp++){
+				aleatorio = (int)(Math.random()*4);
+				/*Al sumarle 65 hacemos que empiece desde el codigo ASCII de la A mayuscula, por lo que puede ser
+				 A B C ó D el resultado que salga, ya que el numero aleatorio valdra de 0 a 3.
+				 */
+				alumno[alu][resp] = (char)(aleatorio+65);
+				/*Si la respuesta que ha dado el alumno coincide con la que hay en la plantilla
+				 *suma 1 al numero de aciertos de dicho alumno,
+				 *en caso contrario suma 1 al numero de errores
+				 */
+				if(alumno[alu][resp]==plantilla[resp]){
+					aciertos[alu] +=1;
+				}else{
+					errores[alu]+=1;
+				}
+			}
+
+		}//Fin generación de respuestas y comprobar aciertos
+
+
+		//Formateo de la impresión por pantalla
+		System.out.print("Solución:\t");
+		for(int resp=0;resp<NUM_RESPUESTAS;resp++){
+			System.out.printf("%2c ",plantilla[resp]);
+		}
+		System.out.println("\tAciertos \tFallos \t\tCalificación\n");
+		for(int alu=0;alu<MAX_ALUMNOS;alu++){
+			System.out.print("Alumno "+ (alu+1)+"\t");
+			for(int resp=0;resp<NUM_RESPUESTAS;resp++){
+				System.out.printf("%2c ",alumno[alu][resp]);
+			}
+			System.out.print("\t"+aciertos[alu]+"\t\t"+errores[alu]+"\t\t");
+			//Cálculo de la nota del alumno y impresión
+			System.out.printf("%3f",((aciertos[alu])-(errores[alu]*0.3)));
+			System.out.println();
+		}
+
+	}
+
+}

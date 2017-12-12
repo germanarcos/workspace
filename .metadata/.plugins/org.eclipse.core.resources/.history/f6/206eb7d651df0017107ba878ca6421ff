@@ -1,0 +1,11 @@
+
+public class Ej1 {
+
+	public static void main(String[] args) {
+		/*Generar respuestas de forma aleatoria para 5 alumnos, ninguna respuesta dejada en blanco
+		 * Formatear la salida, calcular la nota comparando con la plantilla
+		 */
+		
+		
+		 }
+}

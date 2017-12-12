@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Ejercicio2 {
+/* Introducir una cadena por teclado y devolver una cadena
+ * en la que todos los carácteres estén duplicados
+ */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		String entrada = teclado.nextLine();
+		String cadenaGenerada="";
+		for (int posicion = 0;posicion<entrada.length();posicion++){
+			
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Ej2Substrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String entrada;
+		Scanner teclado = new Scanner(System.in);
+		entrada = teclado.nextLine();
+	}
+
+}

@@ -1,5 +1,0 @@
-public class Ej3 {
-	public static void ej3(){
-		char[] simbolos = new char[]{'$','#','%','<','>','@'};
-	}
-}

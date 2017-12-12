@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Ej2Substrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String entrada;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Introduce una cadena");
+		entrada = teclado.nextLine();
+		for(int posicion = 0; posicion< entrada.length();posicion++){
+			System.out.print(entrada.substring(posicion, posicion+1));
+			System.out.print(entrada.substring(posicion, posicion+1));
+		}
+		teclado.close();
+	}
+
+}

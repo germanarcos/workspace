@@ -1,0 +1,16 @@
+
+public class Ej1 {
+
+	public static void main(String[] args) {
+		/*Generar respuestas de forma aleatoria para 5 alumnos, ninguna respuesta dejada en blanco
+		 * Formatear la salida, calcular la nota comparando con la plantilla
+		 */
+		int[] plantilla = new int[]{1,3,0,2,1,2,0,2,1,3};
+		final int MAX_ALUMNOS =5;
+		final int NUM_RESPUESTAS = 10;
+		int[] aciertos = new int[MAX_ALUMNOS];
+		int[] errores = new int[MAX_ALUMNOS];
+		int[] calificaciones = new int[MAX_ALUMNOS];
+
+	}
+}
