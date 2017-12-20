@@ -18,7 +18,7 @@ public class Ej1 {
 			aciertos[alu]=0;
 			errores[alu]=0;
 		}
-
+		
 		//Generamos las respuestas
 		for(int alu=0;alu<MAX_ALUMNOS;alu++){
 			for (int respuesta=0;respuesta<NUM_RESPUESTAS;respuesta++){
@@ -54,5 +54,8 @@ public class Ej1 {
 			System.out.printf("%3f",calificaciones[alu]);
 			System.out.println();
 		}
+
+		
+
 	}
 }
